@@ -448,7 +448,10 @@ a {
     border: .1rem solid lightgray;
     border-radius: 1rem;
 }
+.collection-product-desc:hover{
+    box-shadow: 0 .4rem .8rem 0 rgba(131, 39, 41, 0.2), 0 .6rem 2rem 0 rgba(131, 39, 41, 0.19);
 
+}
 .collection-product-img {
     width: 100%;
 }
@@ -575,7 +578,10 @@ a {
     width: 30%;
     position: relative;
 }
+.news-for-y-img:hover{
+    box-shadow: 0 .4rem .8rem 0 rgba(131, 39, 41, 0.2), 0 .6rem 2rem 0 rgba(131, 39, 41, 0.19);
 
+}
 .news-img {
     width: 100%;
 }
@@ -607,47 +613,68 @@ a {
     color: white;
     font-weight: bold;
 }
-.shine-with-nature{
+
+.shine-with-nature {
     width: 90%;
     border: .2rem solid navy;
     margin: 3rem auto;
     position: relative;
 }
-.shine-nature-img{
+.shine-with-nature:hover{
+    box-shadow: 0 .4rem .8rem 0 rgba(131, 39, 41, 0.2), 0 .6rem 2rem 0 rgba(131, 39, 41, 0.19);
+
+}
+.shine-nature-img {
     width: 100%;
 }
-.shine-nature-img>img{
+
+.shine-nature-img>img {
     width: 100%;
     height: 100%;
 }
-.videoi-review{
+
+.videoi-review {
     width: 90%;
     margin: 2rem auto;
     position: relative;
 }
-.rivaah-content{
+.videoi-review:hover{
+    box-shadow: 0 .4rem .8rem 0 rgba(131, 39, 41, 0.2), 0 .6rem 2rem 0 rgba(131, 39, 41, 0.19);
+
+}
+
+.rivaah-content {
     width: 90%;
     margin: 3rem auto;
     border: .2rem solid khaki;
     display: flex;
-    
+
 }
-.rivaah-brides{
+.rivaah-content:hover{
+    box-shadow: 0 .4rem .8rem 0 rgba(131, 39, 41, 0.2), 0 .6rem 2rem 0 rgba(131, 39, 41, 0.19);
+
+}
+
+.rivaah-brides {
     width: 50%;
 }
-.rivaah-brides>img{
+
+.rivaah-brides>img {
     width: 100%;
     height: 100%;
 }
-.rivaah-info-img{
+
+.rivaah-info-img {
     width: 50%;
     position: relative;
 }
-.rivaah-info-img>img{
+
+.rivaah-info-img>img {
     width: 100%;
     height: 100%;
 }
-.rivaah-explore-button{
+
+.rivaah-explore-button {
     position: absolute;
     top: 80%;
     left: 65%;
@@ -663,12 +690,14 @@ a {
     text-align: center;
     text-transform: capitalize;
 }
-.rivaah-explore-button:hover{
+
+.rivaah-explore-button:hover {
     background-color: #832729;
     color: white;
     font-weight: bold;
 }
-.rivaah-callback-button{
+
+.rivaah-callback-button {
     position: absolute;
     top: 80%;
     left: 30%;
@@ -684,43 +713,57 @@ a {
     text-align: center;
     text-transform: capitalize;
 }
-.rivaah-callback-button:hover{
+
+.rivaah-callback-button:hover {
     background-color: #832729;
     color: white;
     font-weight: bold;
 }
-.jwell-guides-content{
+
+.jwell-guides-content {
     width: 90%;
     margin: 2rem auto;
     border: .2rem solid darkcyan;
 }
-.jwell-guidence{
+
+.jwell-guidence {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.jwell-left-side{
+
+.jwell-left-side {
     width: 49%;
     border: .1rem solid #832729;
     height: 19rem;
-position: relative;
+    position: relative;
 }
-.jwell-left-side>img{
+.jwell-left-side:hover{
+    box-shadow: 0 .4rem .8rem 0 rgba(131, 39, 41, 0.2), 0 .6rem 2rem 0 rgba(131, 39, 41, 0.19);
+
+}
+.jwell-left-side>img {
     width: 100%;
     height: 100%;
 }
-.jwell-right-side{
+
+.jwell-right-side {
     width: 49%;
     height: 19rem;
     border: .1rem solid #832729;
     position: relative;
 }
-.jwell-right-side>img{
+.jwell-right-side:hover{
+    box-shadow: 0 .4rem .8rem 0 rgba(131, 39, 41, 0.2), 0 .6rem 2rem 0 rgba(131, 39, 41, 0.19);
+
+}
+.jwell-right-side>img {
     width: 100%;
     height: 100%;
-    
+
 }
-.guidance-txt{
+
+.guidance-txt {
     color: #832729;
     position: absolute;
     font-size: 2.4rem;
@@ -730,6 +773,257 @@ position: relative;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+
+.jwell-right-side>h1:nth-child(2) {
+    left: 35%;
+}
+
+.j-g-explore-now-btn {
+    position: absolute;
+    font-size: 1.4rem;
+    letter-spacing: .04rem;
+    background-color: #f2c1c276;
+    /* opacity: 0.4; */
+    padding: 1rem;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: inline-block;
+    cursor: pointer;
+}
+.connect-with-us-content{
+    width: 90%;
+    margin: 2rem auto;
+    border: .2rem solid khaki;
+}
+.connect-by-opt{
+    border: .2rem solid green;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.connect-opt{
+    width: 32%;
+    background: url(/images/Upto-20-off-Bg.jpg);
+    display: flex;
+    justify-content: space-between;
+    border: .1rem solid #832729;
+
+}
+.connect-opt:hover{
+    box-shadow: 0 .4rem .8rem 0 rgba(131, 39, 41, 0.2), 0 .6rem 2rem 0 rgba(131, 39, 41, 0.19);
+
+}
+.connect-info{
+    width: 65%;
+    padding: 2rem;
+
+}
+.connect-info>p{
+    font-size: 2rem;
+    color: #832729;
+    font-weight: 600;
+}
+.connect-info>h1{
+    font-size: 3rem;
+    color: #832729;
+    font-weight: 600;
+}
+.connect-img{
+    width: 35%;
+    padding: 1.6rem;
+}
+.connect-img>img{
+    width: 100%;
+    height: 100% ;
+}
+.wh-connect-btn{
+    font-size: 1.4rem;
+    letter-spacing: .04rem;
+    background-color: #f2c1c276;
+    padding: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 1.4rem;
+    font-weight: bold;
+}
+
+/* footer------------------------------------------------------------------------ */
+
+
+.footer{
+    margin-top: 3rem;
+    width: 100%;
+    background-color: #f2c1c276;
+}
+.footer-container{
+    width: 90%;
+    border: .2rem solid black;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+}
+.footer-link-txt{
+    letter-spacing: .02rem;
+    line-height: 2.2rem;
+    font-size: 2rem;
+    color: #832729;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 2rem 0rem 1rem 0rem;
+}
+
+.footer-links-heading{
+    width: 20%;
+    display: flex;
+    text-transform: capitalize;
+    flex-direction: column;
+   }
+.footer-link{
+    color: black;
+    letter-spacing: .02rem;
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+}
+.footer-link:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.download-app{
+    width: 25%;
+    border: .2rem solid orange;
+    margin-top: 1.8rem;
+}
+.download-app>h3{
+    font-size: 1.8rem;
+}
+.app-download-opt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+   
+}
+.appstore-img{
+    width: 45%;
+
+}
+.appstore-img>img{
+    width: 100%;
+    height: 100%;
+}
+.playstore-img{
+    width: 45%;
+}
+.playstore-img>img{
+    width: 100%;
+    height: 100%;
+}
+.follow-us-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.follow-us{
+    width: 48%;
+    font-size: 1.8rem;
+    letter-spacing: .02rem;
+    font-weight: 600;
+}
+.social-media-icons{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.s-m-icon{
+    width: 20% ;
+
+}
+.s-m-icon>img{
+    width: 100%;
+    height: 100%;
+}
+.hr-line{
+    margin: 2rem auto 2rem auto;
+    width: 90%;
+}
+.footer-container-2{
+    width: 90%;
+    margin: auto;
+    border: .2rem solid purple;
+}
+.footer-last-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+.footer-last-left-div{
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-payment-image{
+    width:5%;
+}
+.footer-payment-image>img{
+    width: 100%;
+    height: 100%;
+}
+.footer-last-right-div{
+    width: 35%;
+}
+.footer-last-right-div>p{
+    font-size: 1.4rem;
+    letter-spacing: .02rem;
+    color: #832729;
+    line-height: 2rem;
+}
+
+
+/* login- sign up page------------------------------------------------------------ */
+
+.login-content-wrapper{
+    width: 56%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.left-login-content{
+    width: 75%;
+    border: .2rem solid rebeccapurple;
+    padding: 4rem;
+}
+.left-login-content>h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.right-login-img{
+    width: 25%;
+}
+.right-login-image{
+    width: 100%;
+}
+.right-login-image>img{
+    width: 100%;
+    height: 100%;
+}
+legend{
+    width: 10%;
+}
+.f-content-field{
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+}
+
+
 
 
 
