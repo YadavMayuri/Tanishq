@@ -79,8 +79,12 @@ a {
 
 .icon {
     width: 6%;
-    height: 2rem;
+    height: 2.6rem;
     border: .2rem solid red;
+}
+
+.search-product> .icon:nth-child(2){
+    height: 2.8rem;
 }
 
 .icon>img {
@@ -1396,6 +1400,7 @@ select {
     outline: none;
     border: .1rem solid #832729;
     cursor: pointer;
+    font-size: 1.4rem;
 }
 .products .explorer-btn:hover{
     position: relative;
