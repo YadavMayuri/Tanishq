@@ -1206,7 +1206,9 @@ select {
 
 .nav-subcategory{
     width: 100%;
-    border-top: 1px solid lightgray;
+    border-top: .1rem solid lightgray;
+    border-bottom: .1rem solid lightgray;
+
 }
 .nav-sc-container{
     width: 80%;
@@ -1220,7 +1222,7 @@ select {
 }
 .nav-sc-container li a{
     font-size: 1.2rem;
-    color: #A86769;
+    color: #832729;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -1237,6 +1239,7 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 .nav-service{
     width: 22%;
@@ -1392,7 +1395,7 @@ select {
     text-transform: capitalize;
     outline: none;
     border: .1rem solid #832729;
-
+    cursor: pointer;
 }
 .products .explorer-btn:hover{
     position: relative;
