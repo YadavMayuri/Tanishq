@@ -1197,3 +1197,212 @@ select {
         height: 100%;
     }
 }
+
+
+/* products page-------------------------- */
+
+
+/* ---products--- */
+
+.nav-subcategory{
+    width: 100%;
+    border-top: 1px solid lightgray;
+}
+.nav-sc-container{
+    width: 80%;
+    margin: 1.3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-sc-container li{
+    list-style: none;
+}
+.nav-sc-container li a{
+    font-size: 1.2rem;
+    color: #A86769;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.nav-sc-container li a i{
+    font-size: 1.2rem;
+    color: #A86769;
+    margin-left: .4rem;
+}
+
+.nav-services{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-service{
+    width: 22%;
+    /* border: 1px solid salmon; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.1rem;
+    cursor: pointer;
+    
+}
+.nav-service:nth-child(1){
+    border-right: .1rem solid#A86769;
+    border-left: .1rem solid #A86769;
+}
+.nav-service:nth-child(3){
+    border-right: .1rem solid#A86769;
+    border-left: .1rem solid #A86769;
+}
+.nav-s-img{
+    width: 5%;
+    margin-right: .4rem;
+}
+.nav-s-img{
+    width: 7%;
+}
+.nav-s-text{
+    font-size: 1.2rem;
+    color: #832729;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.products-container{
+    width: 85%;
+    margin: 2rem auto;
+    /* border: 1px solid purple; */
+}
+.path{
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+.path span{
+    font-size: 1.4rem;
+    color: #832729;
+}
+.product-count{
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.product-count span{
+    font-weight: 600;
+}
+.function-btn-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.function-btn{
+    width: 20%;
+    border: 1px solid #832729;
+    border-radius: .6rem;
+    font-size: 1.4rem;
+    color: #832729;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1.6rem 1.3rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+.function-btn:hover{
+    width: 20%;
+    border: 1px solid #832729;
+    border-radius: .6rem;
+    font-size: 1.4rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1.6rem 1.3rem;
+    background-color: #832729;
+}
+.function-btn i{
+    font-size: 1.2rem;
+    color: #832729;
+}
+.products-wrapper{
+    border: .2rem solid green;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 1.5rem; */
+    flex-wrap: wrap;
+    margin: 5rem auto;
+}
+.products-wrapper a{
+    width: 23%;
+    border: 1px solid lightgray;
+    margin-bottom: 4rem;
+}
+.products{
+    width: 100%;
+}
+.product-image{
+    width: 100%;
+}
+.product-image img{
+    width: 100%;
+}
+.product-info{
+    width: 100%;
+    padding: 1rem 1.6rem;
+
+}
+.hurry{
+    width: 100%;
+    margin: .5rem;
+    color: red;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: .8rem;
+}
+.p-name{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: .8rem;
+}
+.p-price{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: .8rem;
+    color: #212529;
+}
+.p-path{
+    font-size: 1.2rem;
+    color: #212529;
+    text-transform: capitalize;
+    margin-bottom: .8rem;
+}
+.products .explorer-btn {
+    position: relative;
+    width: 100%;
+    border-radius: .4rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: .4rem;
+    background-color: white;
+    padding: 1rem 0rem;
+    text-transform: capitalize;
+    outline: none;
+    border: .1rem solid #832729;
+
+}
+.products .explorer-btn:hover{
+    position: relative;
+    width: 100%;
+    border-radius: 0rem;
+    color: white;
+    background-color: #832729;
+    font-weight: bold;
+}
+.products-wrapper a:hover {
+    box-shadow: 0 .4rem .8rem 0 rgba(131, 39, 41, 0.2), 0 .6rem 2rem 0 rgba(131, 39, 41, .19);
+
+}
