@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/responsive-design.css">
     <!-- <script src="https://kit.fontawesome.com/174a9c1444.js" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -18,9 +21,19 @@
         <header>
             <div class="top-navbar">
                 <div class="top-navbar-wrapper">
-                    <div class="tanishq-logo">
-                        <img src="./images/tanishq-logo.svg" alt="">
+                    <div class="logo-hamburger-wrapper">
+                        <a class="hamburger-content-wrapper">
+                            <img src="./images/burger.svg" alt="">
+                        </a>
+                        <a href="" class="tanishq-logo">
+                            <img src="./images/tanishq-logo.svg" alt="">
+                        </a>
+                        <a href="" class="tanishq-logo">
+                            <img src="./images/tanishq-1025img.svg" alt="">
+                        </a>
+
                     </div>
+
                     <div class="search-product">
                         <input type="text" placeholder="Search for Gold Jewellery, Diamond Jewellery and more…">
                         <div class="icon">
@@ -53,7 +66,7 @@
                         <div class="top-right-menu">
                             <a href="">
                                 <div class="single-menu">
-                                    <img src="./images/home.svg" alt="">
+                                    <img src="./images/heart.svg" alt="">
                                 </div>
                                 <div class="top-right-menu-name">wishlist</div>
                             </a>
@@ -68,7 +81,25 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- hide----search------ navbar------------- -->
+                <div class="hide-search-navbar">
+                    <div class="search-product">
+                        <input type="text" placeholder="Search for Gold Jewellery, Diamond Jewellery and more…">
+                        <div class="icon">
+                            <img src="./images/camera.svg" alt="">
+                        </div>
+                        <div class="icon">
+                            <img src="./images/mic.svg" alt="">
+                        </div>
+                        <div class="icon">
+                            <img src="./images/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
 
             <div class="bottom-navbar">
                 <div class="buttom-navbar-container">
@@ -87,6 +118,9 @@
                         </li>
                         <li>
                             <a href="">rings </a>
+                        </li>
+                        <li>
+                            <a href="">exclusive coins </a>
                         </li>
                         <li>
                             <a href="">mia </a>
@@ -163,6 +197,7 @@
         </div>
 
         <!-- -------------slider ends------------------>
+
         <div class="second-section-container">
 
             <div class="section-heading">
@@ -527,7 +562,7 @@
             </div>
 
             <div class="shop-by-gender-info">
-                <a href="" class="collection-product-desc">
+                <a href="" class="collection-product-content-image">
                     <div class="collection-product-img">
                         <img src="./images/Woman.webp" alt="">
                     </div>
@@ -540,32 +575,37 @@
                         </div>
                     </div>
                 </a>
-                <a href="" class="collection-product-desc">
-                    <div class="collection-product-img">
-                        <img src="./images/Men.webp" alt="">
-                    </div>
-                    <div class="collection-product-name-info">
-                        <div class="c-product-name">
-                            men
+
+                <div class="shop-by-gender-img-wrapper">
+                    <a href="" class="collection-product-content-image">
+                        <div class="collection-product-img">
+                            <img src="./images/Men.webp" alt="">
                         </div>
-                        <div class="c-explore-now">
-                            <p>Explore now <span><i class="fa-solid fa-angle-right"></i></span></p>
+                        <div class="collection-product-name-info">
+                            <div class="c-product-name">
+                                men
+                            </div>
+                            <div class="c-explore-now">
+                                <p>Explore now <span><i class="fa-solid fa-angle-right"></i></span></p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="" class="collection-product-desc">
-                    <div class="collection-product-img">
-                        <img src="./images/kid.webp" alt="">
-                    </div>
-                    <div class="collection-product-name-info">
-                        <div class="c-product-name">
-                            kids
+                    </a>
+                    <a href="" class="collection-product-content-image">
+                        <div class="collection-product-img">
+                            <img src="./images/kid.webp" alt="">
                         </div>
-                        <div class="c-explore-now">
-                            <p>Explore now <span><i class="fa-solid fa-angle-right"></i></span></p>
+                        <div class="collection-product-name-info">
+                            <div class="c-product-name">
+                                kids
+                            </div>
+                            <div class="c-explore-now">
+                                <p>Explore now <span><i class="fa-solid fa-angle-right"></i></span></p>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
+
+
             </div>
         </div>
 
@@ -582,7 +622,7 @@
 
         <!-- section-8----------------------------------- -->
 
-        <div class="videoi-review">
+        <div class="video-review">
             <iframe width="100%" height="350"
                 src="https://www.youtube.com/embed/omr0ZiQhUAo?autoplay=1&mute=1&controls=0&showinfo=0"
                 title="YouTube video player" frameborder="0"
@@ -789,6 +829,9 @@
                     </div>
                 </div>
             </div>
+
+            <!-- ---------------------------------------------------- -->
+
 
         </div>
     </div>
