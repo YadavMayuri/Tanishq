@@ -235,15 +235,6 @@ a {
     cursor: pointer;
     text-decoration: none;
 }
-
-#slides {
-    /* padding: 10px; */
-    /* border: 3px solid #ccc; */
-    /* background: #fff; */
-    /* position: relative; */
-    /* z-index: 1; */
-}
-
 #overflow {
     width: 100%;
     overflow: hidden;
@@ -413,13 +404,11 @@ a {
 
 .shop-jwell-content {
     width: 100%;
-    border: .1rem solid olive;
     display: flex;
     justify-content: space-between;
 }
 
 .jwell-left-img-content-info {
-    border: .1rem solid orange;
     width: 49%;
     display: flex;
     justify-content: space-between;
@@ -427,7 +416,6 @@ a {
 }
 
 .jwell-right-img-content-info {
-    border: .1rem solid orange;
     width: 49%;
     display: flex;
     justify-content: space-between;
@@ -690,7 +678,10 @@ a {
     display: flex;
     justify-content: space-between;
 }
+.collection-product-content-image:hover{
+    box-shadow: 0 .4rem .8rem 0 rgba(131, 39, 41, 0.2), 0 .6rem 2rem 0 rgba(131, 39, 41, 0.19);
 
+}
 .shop-by-gender-img-wrapper .collection-product-content-image {
     width: 48.5%;
     border: .1rem solid lightgray;
@@ -1687,13 +1678,16 @@ select {
 
 .mini-img {
     width: 100%;
-    /* border: .1rem solid darkred; */
+    border: .1rem solid #832729;
     margin-bottom: 4rem;
 }
 
 .mini-img>img {
     width: 100%;
     height: 100%;
+}
+.active-img{
+    border: .2rem solid #832729;
 }
 
 .product-highlight-image {
@@ -1706,6 +1700,7 @@ select {
 
 .left-swap-arrow {
     width: 5%;
+    cursor: pointer;
 }
 
 .left-swap-arrow>img {
@@ -1726,6 +1721,7 @@ select {
 
 .right-swap-arrow {
     width: 5%;
+    cursor: pointer;
 }
 
 .right-swap-arrow>img {
@@ -1774,6 +1770,7 @@ select {
 .wishlist-icon>img {
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 .send-icon {
@@ -1783,6 +1780,7 @@ select {
 .send-icon>img {
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 .product-code {
@@ -1920,6 +1918,7 @@ select {
     font-weight: 500;
     text-align: center;
     border-radius: .5rem;
+    cursor: pointer;
 }
 
 .sp-size-options {
@@ -1927,6 +1926,7 @@ select {
     border: .1rem solid black;
     padding: .7rem .9rem;
     border-radius: .5rem;
+    cursor: pointer;
 }
 
 .sp-size-options>select {
@@ -1934,7 +1934,6 @@ select {
     font-weight: 500;
     text-align: center;
 }
-
 .quantity-content {
     display: flex;
     gap: 1rem;
@@ -2010,6 +2009,9 @@ select {
     color: white;
     cursor: pointer;
 }
+.buy-now-btn:hover{
+    background-color: #5a1617;
+}
 .sp-hr-linr{
     color: #A86769;
     margin: 2rem 0rem;
@@ -2049,6 +2051,7 @@ select {
     font-size: 1.7rem;
     color: #832729;
     text-transform: capitalize;
+    cursor: pointer;
 
 }
 .sp-services-info{
@@ -2099,6 +2102,7 @@ select {
     border: .1rem solid black;
     border-radius: .7rem;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 .banner-img{
     margin: 2rem 0rem;
@@ -2156,6 +2160,7 @@ select {
     /* border: .1rem solid blueviolet; */
     text-align: center;
     font-size: 2rem;
+    cursor: pointer;
 
 }
 .sp-change-right-arrows{
@@ -2163,6 +2168,7 @@ select {
     /* border: .1rem solid blueviolet; */
     text-align: center;
     font-size: 2rem;
+    cursor: pointer;
 }
 .sp-spec-name-and-details{
     display: flex;
@@ -2196,6 +2202,9 @@ select {
     font-weight: 600;
     text-transform: capitalize;
 
+}
+.sp-dropdown>span>i{
+    cursor: pointer;
 }
 .bottom-section-container{
     width: 90%;
@@ -2261,6 +2270,7 @@ select {
     text-transform: capitalize;
     margin-right: 2rem;
     padding-bottom: 1rem;
+    cursor: pointer;
 }
 .active-link-q-r{
     font-weight: bold;
