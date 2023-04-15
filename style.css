@@ -1208,6 +1208,7 @@ a {
     justify-content: space-between;
     border: .1rem solid #832729;
     text-align: center;
+    border-radius: 2rem;
 }
 
 .left-login-content {
@@ -1233,6 +1234,8 @@ a {
 .right-login-image>img {
     width: 100%;
     height: 100%;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
 fieldset {
@@ -1262,7 +1265,7 @@ select {
     padding: 1.4rem 2rem;
     border: .1rem solid gray;
     outline: none;
-    width: 70%;
+    width: 90%;
     font-size: 1.2rem;
     margin-top: .5rem;
 }
@@ -2316,13 +2319,13 @@ border-bottom: .2rem solid #212529;
 
 .cart-screen{
     /* width: 100%; */
-    border: .1rem solid black;
+    /* border: .1rem solid black; */
     color: #212529;
     margin-top: 2%;
 }
 .cart-container{
     width: 90%;
-    border: .2rem solid rebeccapurple;
+    /* border: .2rem solid rebeccapurple; */
     margin: auto;
 }
 .register-login-content-wrapper{
@@ -2332,7 +2335,7 @@ border-bottom: .2rem solid #212529;
     font-size: 1.5rem;
     letter-spacing: .04rem;
     line-height: 1.6;
-    border: .1rem solid blue;
+    /* border: .1rem solid blue; */
     width: 30%;
 }
 .r-l-link{
@@ -2346,18 +2349,18 @@ border-bottom: .2rem solid #212529;
 }
 .cart-product-details{
     width: 100%;
-    border: .1rem solid palegreen;
+    /* border: .1rem solid palegreen; */
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
 }
 .left-added-cart-products{
     width: 63%;
-    border: .1rem solid orange;
+    /* border: .1rem solid orange; */
 }
 .right-cart-summary{
     width: 35%;
-    border: .1rem solid orange;
+    /* border: .1rem solid orange; */
     
 }
 .cart-product-add-informatio{
@@ -2369,11 +2372,11 @@ border-bottom: .2rem solid #212529;
 .cart-product-img-name-price{
     display: flex;
     justify-content: space-between;
-    border: .2rem solid paleturquoise;
+    /* border: .2rem solid paleturquoise; */
 }
 .cart-product-image{
     width: 25%;
-    border: .1rem solid peru;
+    /* border: .1rem solid peru; */
 }
 .cart-product-image>img{
     width: 100%;
@@ -2382,14 +2385,14 @@ border-bottom: .2rem solid #212529;
 }
 .c-product-name-n-all{
     width: 70%;
-    border: .1rem solid peru;
+    /* border: .1rem solid peru; */
 }
 .product-name-qty{
     display: flex;
     justify-content: space-between;
 }
 .cart-p-n-price-info{
-    border: .1rem solid gray;
+    /* border: .1rem solid gray; */
     width: 68%;
 }
 .cart-p-name{
@@ -2424,7 +2427,7 @@ text-decoration: line-through;
 .cart-qty-buttons{
     display: flex;
     justify-content: space-between;
-    border: .1rem solid green;
+    /* border: .1rem solid green; */
     width: 20%;
     align-items:first baseline;
 }
@@ -2462,7 +2465,7 @@ text-decoration: line-through;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: .1rem solid green;
+    /* border: .1rem solid green; */
 
 }
 .gift-wrapper{
@@ -2471,7 +2474,7 @@ text-decoration: line-through;
     justify-content:left;
     gap: 1rem;
     align-items: center;
-    border: .1rem solid red;
+    /* border: .1rem solid red; */
 
 }
 .gift-message{
@@ -2484,7 +2487,7 @@ text-decoration: line-through;
 }
 .wishlist-cart-icon{
     width: 6%;
-    border: .1rem solid red;
+    /* border: .1rem solid red; */
 }
 .wishlist-cart-icon>img{
     width: 100%;
@@ -2492,7 +2495,7 @@ text-decoration: line-through;
 }
 .delete-icon{
     width: 6%;
-    border: .1rem solid red;
+    /* border: .1rem solid red; */
 }
 .decrease-btn>img{
     width: 100%;
@@ -2505,7 +2508,10 @@ text-decoration: line-through;
 }
 .country-wrap{
     width: 30%;
-    border: .1rem solid palevioletred;
+    /* border: .1rem solid palevioletred; */
+}
+.country-wrap>fieldset>select{
+    font-size: 1.4rem;
 }
 .pincode-checck-wrapper{
     border: .1rem solid lightgray;
@@ -2523,9 +2529,10 @@ text-decoration: line-through;
     color: gray;
     font-weight: 600;
     letter-spacing: .03rem;
+    cursor: pointer;
 }
 .order-summery-wrappwer{
-    padding: 2rem;
+    padding: 4rem;
     margin-top: 3rem;
     background-color: #f6f6f6;
     border-radius: .7rem;
@@ -2584,6 +2591,10 @@ text-decoration: line-through;
     outline: none;
     padding:1.6rem  1.4rem;
     border-radius: .6rem;
+    cursor: pointer;
+}
+.apply-cart-btn:hover{
+    background-color: #5a1617;
 }
 
 .order-table{
