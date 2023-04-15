@@ -444,6 +444,16 @@
 }
 
 @media screen and (max-width:769px) {
+    .right-cart-summary{
+        width: 100%;
+    }
+    .left-added-cart-products{
+        width: 100%;
+    }
+
+    .cart-product-details{
+        flex-direction: column-reverse;
+    }
     html {
         font-size: 44%;
     }

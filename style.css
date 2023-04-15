@@ -2530,21 +2530,98 @@ text-decoration: line-through;
     background-color: #f6f6f6;
     border-radius: .7rem;
 }
+.enter-code-promo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
 
+.cart-ent-code{
+    width: 50%;
+    border-bottom: .2rem solid #832729;
+    color: #832729;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.cart-promo-code{
+    width: 50%;
+    border-bottom:.2rem solid black;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 600;
 
+}
+.coupon-code-cart-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.coupon-cart{
+    width: 65%;
+    border: .1rem solid lightgray;
+    padding: 1.4rem;
+    border-radius: .6rem;
+}
+.coupon-cart>input{
+    width: 100%;
+    background-color: #f6f6f6;
+    border: none;
+    outline: none;
 
+}
+.app-btn{
+    width: 30%;
+}
+.apply-cart-btn{
+    width: 100%;
+    background-color: #832729;
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    padding:1.6rem  1.4rem;
+    border-radius: .6rem;
+}
 
+.order-table{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    
+}
+.order-spec{
+    width: 70%;
+}
+.order-amt{
+    width: 30%;
+    text-align: right;
+}
+.cart-order-sum{
+    margin-top: 4rem;
+}
+.cart-order-sum>h3{
+   font-size: 1.6rem;
+   color: #832729;
+   font-weight: 700;
 
+}
+.cart-order-sum> .order-table:nth-child(5){
+    color: #832729;
+    font-weight: 600;
+    margin-top: 2rem;
+}
 
+.cart-order-sum> .order-table:nth-child(6){
+    color: #18a33e;
+    font-weight: 600;
+    margin-top: 2rem;
 
-
-
-
-
-
-
-
-
+}
 
 
 
