@@ -2349,9 +2349,10 @@ border-bottom: .2rem solid #212529;
     border: .1rem solid palegreen;
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
 }
 .left-added-cart-products{
-    width: 60%;
+    width: 63%;
     border: .1rem solid orange;
 }
 .right-cart-summary{
@@ -2361,12 +2362,14 @@ border-bottom: .2rem solid #212529;
 }
 .cart-product-add-informatio{
     width: 100%;
-    border: .1rem solid palevioletred;
+    border-top: .1rem solid lightgray;
+    padding: 2rem 2rem 2rem 0rem;
+
 }
 .cart-product-img-name-price{
     display: flex;
     justify-content: space-between;
-    border: .1rem solid paleturquoise;
+    border: .2rem solid paleturquoise;
 }
 .cart-product-image{
     width: 25%;
@@ -2385,6 +2388,163 @@ border-bottom: .2rem solid #212529;
     display: flex;
     justify-content: space-between;
 }
+.cart-p-n-price-info{
+    border: .1rem solid gray;
+    width: 68%;
+}
+.cart-p-name{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #832729;
+    letter-spacing: .04rem;
+}
+.product-cart-code{
+    color: #2c2c2c;
+    font-family: Nunito Sans,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: .6;
+    margin-top: 1rem;
+}
+.cart-prices{
+    margin-top: 2.6rem;
+}
+.cart-prices>span:nth-child(1){
+    color: #3e3e3e;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+.cart-prices>span:nth-child(2){
+    color: #8c8c8c;
+    font-size: 2.2rem;
+    font-weight: 700;
+text-decoration: line-through;
+}
+.cart-qty-buttons{
+    display: flex;
+    justify-content: space-between;
+    border: .1rem solid green;
+    width: 20%;
+    align-items:first baseline;
+}
+.decrease-btn{
+    background-color: lightgrey;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    padding: .4rem;
+    width: 30%;
+    height: 3rem;
+}
+.increase-btn{
+    background-color: lightgrey;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    padding: .4rem;
+    width: 28%;
+    height: 3rem;
+}
+.qty-count{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.gift-wishlist-delete-wrapper{
+    width: 70%;
+    margin-left: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: .1rem solid green;
+
+}
+.gift-wrapper{
+    width: 60%;
+    display: flex;
+    justify-content:left;
+    gap: 1rem;
+    align-items: center;
+    border: .1rem solid red;
+
+}
+.gift-message{
+    font-size: 1.4rem;
+    color: #832729;
+    font-weight: 700;
+    letter-spacing: .04rem;
+    text-transform: capitalize;
+    margin-left: 1rem;
+}
+.wishlist-cart-icon{
+    width: 6%;
+    border: .1rem solid red;
+}
+.wishlist-cart-icon>img{
+    width: 100%;
+    height: 100%;
+}
+.delete-icon{
+    width: 6%;
+    border: .1rem solid red;
+}
+.decrease-btn>img{
+    width: 100%;
+    height: 100%;
+}
+.country-pincode-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items:first baseline;
+}
+.country-wrap{
+    width: 30%;
+    border: .1rem solid palevioletred;
+}
+.pincode-checck-wrapper{
+    border: .1rem solid lightgray;
+    border-radius: .5rem;
+    width: 65%;
+    padding: 1.3rem;
+}
+.pincode-checck-wrapper>input{
+    margin-right: 1rem;
+    border: none;
+    outline: none;
+}
+.pincode-checck-wrapper>label{
+    font-size: 1.4rem;
+    color: gray;
+    font-weight: 600;
+    letter-spacing: .03rem;
+}
+.order-summery-wrappwer{
+    padding: 2rem;
+    margin-top: 3rem;
+    background-color: #f6f6f6;
+    border-radius: .7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
