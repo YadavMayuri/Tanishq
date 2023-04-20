@@ -33,6 +33,7 @@ function register(event) {
                     Ls.push(userdata);
                     localStorage.setItem("Users", JSON.stringify(Ls))
                     alert("Registration Successful")
+                    window.location.href="./login.html";
                     document.getElementById("username").value = ""
                     document.getElementById("useremail").value = ""
                     document.getElementById("userpassword").value = ""
@@ -74,6 +75,7 @@ function login(event) {
     }
     if (flag == true) {
         alert("login successfully")
+        window.location.href="./index.html";
     }
     else {
         alert("Credintials not matched")
