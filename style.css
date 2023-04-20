@@ -1206,15 +1206,16 @@ a {
     margin: 5rem auto;
     display: flex;
     justify-content: space-between;
-    border: .1rem solid #832729;
+    /* border: .1rem solid #832729; */
     text-align: center;
     border-radius: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .left-login-content {
     width: 72%;
     /* border: .2rem solid rebeccapurple; */
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
 }
 
 .left-login-content>h1 {
@@ -1229,6 +1230,7 @@ a {
 
 .right-login-image {
     width: 100%;
+    height: 38rem;
 }
 
 .right-login-image>img {
@@ -1237,69 +1239,54 @@ a {
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
 }
-
-fieldset {
-    width: 10%;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-
-}
-
-select {
-    border: none;
-    outline: none;
-    font-size: 1.2rem;
-
+.register-screen .right-login-image {
+    width: 100%;
+    height: 49rem;
 }
 
 .f-content-field {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* border: .1rem solid gray; */
     width: 80%;
     margin: auto;
 }
 
 .ent-num {
-    padding: 1.4rem 2rem;
+    padding: 1rem 2rem;
     border: .1rem solid gray;
     outline: none;
-    width: 90%;
-    font-size: 1.2rem;
+    width: 100%;
+    font-size: 1.3rem;
     margin-top: .5rem;
 }
 
 .email-info {
     width: 80%;
-    margin: 1rem auto;
-    padding: 1.2rem 2rem;
+    margin: 1.6rem auto;
+    padding: 1rem 2rem;
     border: .1rem solid gray;
-    font-size: 1.2rem;
-
+    text-align: left;
 
 }
 
 .email-info>input {
     border: none;
     outline: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 
 }
 
 .password-content {
     width: 80%;
     margin: 1rem auto;
-    padding: 1.2rem 2rem;
+    padding: 1rem 2rem;
     border: .1rem solid gray;
-    font-size: 1.2rem;
-
+    text-align: left;
 }
 
 .password-content>input {
     border: none;
     outline: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    width: 100%;
 
 }
 
@@ -1310,7 +1297,12 @@ select {
     /* border: .1rem solid red; */
     display: flex;
     align-items: center;
-    font-size: 1.2rem
+    font-size: 1.3rem;
+}
+.remember-me>input{
+    accent-color: #832729;
+    cursor: pointer;
+    outline: none;
 }
 
 .remember-me>span {
@@ -1337,7 +1329,7 @@ select {
 .r-otp-btn {
     width: 40%;
     display: inline-block;
-    margin: 1rem auto;
+    margin: 2rem auto 1rem auto;
     color: white;
     background-color: #832729;
     border: none;
@@ -1346,6 +1338,9 @@ select {
     text-align: center;
     border-radius: .5rem;
     font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: .04rem;
 }
 
 @media screen and (max-width:769px) {
