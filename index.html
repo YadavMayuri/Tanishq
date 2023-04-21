@@ -55,11 +55,11 @@
                             </a>
                         </div>
                         <div class="top-right-menu">
-                            <a href="">
+                            <a href="./register.html">
                                 <div class="single-menu">
                                     <img src="./images/user.svg" alt="">
                                 </div>
-                                <div class="top-right-menu-name">account</div>
+                                <div class="top-right-menu-name" id="switch">account</div>
                             </a>
                         </div>
                         <div class="top-right-menu">
@@ -853,6 +853,26 @@
 
         </div>
     </div>
+
+    <script>
+        window.onload=function(){
+            // alert("working")
+            var currentUser= JSON.parse(localStorage.getItem("TanishqCurrentUser"))
+            // console.log(currentUser,"current user");
+            if (!!currentUser){
+                // alert(currenUser,"username")
+                var divfromHtml = document.getElementById("switch");
+                // console.log(divfromHtml, "divfromhtml");
+                // var h1=document.createElement("h1");
+                // h1.innerText="Mayuri"
+                // divfromHtml.append(h1)
+                var name=`<div>${currentUser.userName}</div>`;
+                divfromHtml.innerHTML=name;
+            }else{
+                alert("current user absent")
+            }
+        }
+    </script>
 
 </body>
 

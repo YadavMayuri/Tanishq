@@ -126,6 +126,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
 }
 
 .top-right-menu:hover {
@@ -2505,8 +2506,17 @@ text-decoration: line-through;
     width: 30%;
     /* border: .1rem solid palevioletred; */
 }
+.country-wrap>fieldset{
+   border: .1rem solid lightgrey;
+   border-radius: .5rem;
+
+}
 .country-wrap>fieldset>select{
     font-size: 1.4rem;
+    border: none;
+    width: 100%;
+    outline: none;
+    padding: .8rem;
 }
 .pincode-checck-wrapper{
     border: .1rem solid lightgray;
