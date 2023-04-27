@@ -548,11 +548,6 @@ a {
     display: none;
 }
 
-.collection-product-desc:hover .c-explore-now>p {
-    color: #832729;
-    margin-left: -3%;
-    transition: .6s;
-}
 
 .collection-product-img {
     width: 100%;
@@ -579,6 +574,20 @@ a {
 .c-explore-now {
     font-size: 1.4rem;
     color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: .2rem solid green; */
+}
+.collection-product-desc:hover .c-explore-now .c-epx-now {
+    color: #832729;
+    margin-left: -3%;
+    transition: .6s;
+    animation-duration: .6s;
+}
+.collection-product-desc:hover .c-explore-now span {
+    color: #832729;
+    
 }
 
 /* section-4 */
