@@ -75,6 +75,13 @@
                                 <div class="top-right-menu-name">cart</div>
                             </a>
                         </div>
+
+                        <div  id="logout">
+                            
+                        </div>
+
+                        
+
                     </div>
                 </div>
 
@@ -886,17 +893,29 @@
             // console.log(currentUser,"current user");
             if (!!currentUser) {
                 // alert(currenUser,"username")
+                var logoutDiv = document.getElementById("logout")
                 var divfromHtml = document.getElementById("switch");
                 // console.log(divfromHtml, "divfromhtml");
                 // var h1=document.createElement("h1");
                 // h1.innerText="Mayuri"
                 // divfromHtml.append(h1)
+                
+                var button = '<i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout()">Logout</button>'
                 var name = `<div>${currentUser.userName}</div>`;
                 divfromHtml.innerHTML = name;
-            } else {
-                alert("current user absent")
-            }
+                logoutDiv.innerHTML = button;
+                // logoutDiv.innerHTML = icon
+            } 
+            // else {
+            //     alert("current user absent")
+            // }
         }
+        function logout() {
+            alert("Logout successful.")
+            localStorage.removeItem("TanishqCurrentUser")
+            window.location.reload()
+        }
+
     </script>
 
 </body>

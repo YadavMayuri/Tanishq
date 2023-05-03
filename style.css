@@ -165,7 +165,32 @@ a {
     font-weight: normal;
     margin-top: .2rem;
 }
-
+#logout{
+    width: 22%;
+    /* border: .2rem solid palegreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+#logout button{
+    text-align: center;
+    color: #832729;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: .2rem;
+    background-color: #f2e9e9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#logout-icon{
+    color: #5a1617;
+    font-size: 1rem;
+    margin-bottom: .3rem;
+}
 /* hide search navbar---------------------------- */
 
 .hide-search-navbar {
