@@ -21,10 +21,10 @@
                     <a class="hamburger-content-wrapper">
                         <img src="./images/burger.svg" alt="">
                     </a>
-                    <a href="" class="tanishq-logo">
+                    <a href="./index.html" class="tanishq-logo">
                         <img src="./images/tanishq-logo.svg" alt="">
                     </a>
-                    <a href="" class="tanishq-logo">
+                    <a href="./index.html" class="tanishq-logo">
                         <img src="./images/tanishq-1025img.svg" alt="">
                     </a>
 
@@ -52,11 +52,11 @@
                         </a>
                     </div>
                     <div class="top-right-menu">
-                        <a href="">
+                        <a href="./register.html">
                             <div class="single-menu">
                                 <img src="./images/user.svg" alt="">
                             </div>
-                            <div class="top-right-menu-name">account</div>
+                            <div class="top-right-menu-name" id="switch">account</div>
                         </a>
                     </div>
                     <div class="top-right-menu">
@@ -77,8 +77,11 @@
                     </div>
 
                     <div  id="logout">
-                            
+                        
                     </div>
+
+                    
+
                 </div>
             </div>
 
@@ -143,6 +146,7 @@
                 </ul>
             </div>
         </div>
+
 
     </header>
 
@@ -645,6 +649,37 @@
     </div>
 
 
+    <script>
+        window.onload = function () {
+            // alert("working")
+            var currentUser = JSON.parse(localStorage.getItem("TanishqCurrentUser"))
+            // console.log(currentUser,"current user");
+            if (!!currentUser) {
+                // alert(currenUser,"username")
+                var logoutDiv = document.getElementById("logout")
+                var divfromHtml = document.getElementById("switch");
+                // console.log(divfromHtml, "divfromhtml");
+                // var h1=document.createElement("h1");
+                // h1.innerText="Mayuri"
+                // divfromHtml.append(h1)
+                
+                var button = '<i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout()">Logout</button>'
+                var name = `<div>${currentUser.userName}</div>`;
+                divfromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
+                // logoutDiv.innerHTML = icon
+            } 
+            // else {
+            //     alert("current user absent")
+            // }
+        }
+        function logout() {
+            alert("Logout successful.")
+            localStorage.removeItem("TanishqCurrentUser")
+            window.location.reload()
+        }
+
+    </script>
 </body>
 
 </html>

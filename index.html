@@ -900,7 +900,7 @@
                 // h1.innerText="Mayuri"
                 // divfromHtml.append(h1)
                 
-                var button = '<i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout()">Logout</button>'
+                var button = '<i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout() class="lgbtn">Logout</button>'
                 var name = `<div>${currentUser.userName}</div>`;
                 divfromHtml.innerHTML = name;
                 logoutDiv.innerHTML = button;
@@ -914,6 +914,8 @@
             alert("Logout successful.")
             localStorage.removeItem("TanishqCurrentUser")
             window.location.reload()
+
+            
         }
 
     </script>
