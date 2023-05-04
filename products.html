@@ -501,7 +501,7 @@
                 // h1.innerText="Mayuri"
                 // divfromHtml.append(h1)
                 
-                var button = '<i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout()">Logout</button>'
+                var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout()" class="logout-button-txt">Logout</button></span>'
                 var name = `<div>${currentUser.userName}</div>`;
                 divfromHtml.innerHTML = name;
                 logoutDiv.innerHTML = button;

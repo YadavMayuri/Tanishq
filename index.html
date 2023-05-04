@@ -76,11 +76,11 @@
                             </a>
                         </div>
 
-                        <div  id="logout">
-                            
+                        <div id="logout">
+
                         </div>
 
-                        
+
 
                     </div>
                 </div>
@@ -260,7 +260,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="./products.html" class="product-link">
+                    <a href="./multiple-products-page.html" class="product-link">
                         <div class="card-jewll-category">
                             <div class="product-img">
                                 <img src="./images/CoupleRing.webp" alt="">
@@ -792,9 +792,10 @@
                 </div>
                 <div class="footer-links-heading">
                     <h3 class="footer-link-txt">contact us</h3>
-                    <a href="" class="footer-link"><span><i class="fa-regular fa-envelope"></i></span>write to us </a>
-                    <a href="" class="footer-link"><span><i class="fa-solid fa-phone"></i></span> 1800-266-0123 </a>
-                    <a href="" class="footer-link"><span><i class="fa-regular fa-message"></i></span> chat with us </a>
+                    <a href="" class="footer-link"><span><i class="fa-regular fa-envelope"></i></span>write to us
+                    </a>
+                    <a href="" class="footer-link"><span><i class="fa-solid fa-phone"></i></span>1800-266-0123 </a>
+                    <a href="" class="footer-link"><span><i class="fa-regular fa-message"></i></span>chat with us </a>
                 </div>
 
                 <div class="collapse-link-group">
@@ -886,40 +887,8 @@
         </div>
     </div>
 
-    <script>
-        window.onload = function () {
-            // alert("working")
-            var currentUser = JSON.parse(localStorage.getItem("TanishqCurrentUser"))
-            // console.log(currentUser,"current user");
-            if (!!currentUser) {
-                // alert(currenUser,"username")
-                var logoutDiv = document.getElementById("logout")
-                var divfromHtml = document.getElementById("switch");
-                // console.log(divfromHtml, "divfromhtml");
-                // var h1=document.createElement("h1");
-                // h1.innerText="Mayuri"
-                // divfromHtml.append(h1)
-                
-                var button = '<i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout() class="lgbtn">Logout</button>'
-                var name = `<div>${currentUser.userName}</div>`;
-                divfromHtml.innerHTML = name;
-                logoutDiv.innerHTML = button;
-                // logoutDiv.innerHTML = icon
-            } 
-            // else {
-            //     alert("current user absent")
-            // }
-        }
-        function logout() {
-            alert("Logout successful.")
-            localStorage.removeItem("TanishqCurrentUser")
-            window.location.reload()
-
-            
-        }
-
-    </script>
-
+   
+<script src="./main.js"></script>
 </body>
 
 </html>
