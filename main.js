@@ -86,30 +86,6 @@ function login(event) {
 
 }
 
-
-window.onload = function () {
-    // alert("working")
-    var currentUser = JSON.parse(localStorage.getItem("TanishqCurrentUser"))
-    // console.log(currentUser,"current user");
-    if (!!currentUser) {
-        // alert(currenUser,"username")
-        var logoutDiv = document.getElementById("logout")
-        var divfromHtml = document.getElementById("switch");
-        // console.log(divfromHtml, "divfromhtml");
-        // var h1=document.createElement("h1");
-        // h1.innerText="Mayuri"
-        // divfromHtml.append(h1)
-
-        var button ='<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout()" class="logout-button-txt">Logout</button></span>'
-        var name = `<div>${currentUser.userName}</div>`;
-        divfromHtml.innerHTML = name;
-        logoutDiv.innerHTML = button;
-        // logoutDiv.innerHTML = icon
-    }
-    // else {
-    //     alert("current user absent")
-    // }
-}
 function logout() {
     alert("Logout successful.")
     localStorage.removeItem("TanishqCurrentUser")
@@ -117,6 +93,8 @@ function logout() {
 
 
 }
+
+
 
 
 

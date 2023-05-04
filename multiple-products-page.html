@@ -359,18 +359,49 @@
         window.onload = function () {
             // alert("working")
 
+            var currentUser = JSON.parse(localStorage.getItem("TanishqCurrentUser"))
+            // console.log(currentUser,"current user");
+            if (!!currentUser) {
+                // alert(currenUser,"username")
+                var logoutDiv = document.getElementById("logout")
+                var divfromHtml = document.getElementById("switch");
+                // console.log(divfromHtml, "divfromhtml");
+                // var h1=document.createElement("h1");
+                // h1.innerText="Mayuri"
+                // divfromHtml.append(h1)
+
+                var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout()" class="logout-button-txt">Logout</button></span>'
+                var name = `<div>${currentUser.userName}</div>`;
+                divfromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
+                // logoutDiv.innerHTML = icon
+            }
+            // else {
+            //     alert("current user absent")
+            // }
+
+
+
             var divToShowProducts = document.getElementById("products");
             var finalData = "";
 
             var productsFromLS = JSON.parse(localStorage.getItem("Products"))
             for (var i = 0; i < productsFromLS.length; i++) {
-                finalData += `<a href="./single-product.html"><div id='singlePro'><img src=${productsFromLS[i].proImage} /><h3 class="mpp-pro-name">${productsFromLS[i].proName}</h3><p class="mpp-pro-price"> ${productsFromLS[i].proPrice}</p></div></a>`;
+                finalData += `<a href="./single-product.html"><div id='singlePro'><img src=${productsFromLS[i].proImage} /><h3 class="mpp-pro-name">${productsFromLS[i].proName}</h3><p class="mpp-pro-price">₹ ${productsFromLS[i].proPrice}</p></div></a>`;
             }
 
             // console.log(finalData, "finalData here")
 
             divToShowProducts.innerHTML = finalData;
         }
+        function logout() {
+            alert("Logout successful.")
+            localStorage.removeItem("TanishqCurrentUser")
+            window.location.reload()
+
+
+        }
+
 
     </script>
 
