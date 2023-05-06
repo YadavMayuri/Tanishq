@@ -88,7 +88,7 @@
                         </a>
                     </div>
                     <div class="top-right-menu">
-                        <a href="./cart.html">
+                        <a href="./Cart-1.html">
                             <div class="single-menu">
                                 <img src="./images/cart.svg" alt="">
                             </div>
@@ -710,7 +710,7 @@
             var structure = `<div  id='singlePro' > <img src='${product.proImage} ' /><br/> </div>`
             var productName = `${product.proName}`
             var productprice = `${product.proPrice}`
-            var addtocart =` <button onclick='addCart()'  class="add-to-cart-btn">Add to cart</button>`
+            var addtocart =` <button onclick='addCart(${JSON.stringify(product)})' class="add-to-cart-btn">Add to cart</button>`
             console.log(structure, "here");
             divToAppendProduct.innerHTML = structure;
             divToAppendProductName.innerHTML = productName;
@@ -720,8 +720,24 @@
 
 
         }
-        function addCart() {
-            alert("Adding to cart")
+        function addCart(product) {
+            //  alert("Adding to cart")
+            var currentUser = JSON.parse(localStorage.getItem("TanishqCurrentUser"))
+            console.log(currentUser.userEmail);
+            var userdata= JSON.parse(localStorage.getItem("Tanishq-Users"));
+            for(var i=0; i<userdata[i].length; i++){
+                if(currentUser.userEmail=== userdata[i].userEmail){
+                    alert("got")
+                    if(userdata[i].cartProducts=== undefined){
+                        userdata[i].cartProducts= [product]
+                    }else{
+                        userdata[i].cartProducts.push(product);
+                    }
+                    alert("Product added to cart")
+                    window.location.href="./Cart-1.html"
+                }
+            }
+            localStorage.setItem("Tanishq-Users",JSON.stringify(userdata))
         }
 
         function logout() {
