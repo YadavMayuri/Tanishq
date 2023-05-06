@@ -23,7 +23,7 @@
             }
             var finalData=""
             for(var i=0; i<products.length; i++){
-                finalData+= `<div><img src="'${products[i].proImage}'/> <br/> <h2>${products[i].proName}</h2><br/><h3>${products[i].proPrice}</h3></div>`
+                finalData+= `<div><img src='${products[i].proImage}'/> <br/> <h2>${products[i].proName}</h2><br/><h3>${products[i].proPrice}</h3></div>`
             }
            divToAppendProducts.innerHTML=finalData;
         }

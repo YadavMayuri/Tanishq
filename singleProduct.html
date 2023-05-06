@@ -284,8 +284,8 @@
                             Not sure what to buy? Checkout ourk<span><a href="">Buying Guides</a></span>
                         </div>
                         <div class="add-buy-btns">
-                            <a id="for-add-to-cart-btn"> </a>
-                            <button class="buy-now-btn"> buy now</button>
+                            <div id="for-add-to-cart-btn"> </div>
+                            <!-- <button class="buy-now-btn"> buy now</button> -->
                         </div>
                         <hr class="sp-hr-linr">
                         <div class="country-pincode">
@@ -710,7 +710,7 @@
             var structure = `<div  id='singlePro' > <img src='${product.proImage} ' /><br/> </div>`
             var productName = `${product.proName}`
             var productprice = `${product.proPrice}`
-            var addtocart =` <button onclick='addCart(${JSON.stringify(product)})' class="add-to-cart-btn">Add to cart</button>`
+            var addtocart = ` <button onclick='addCart(${JSON.stringify(product)})' class="add-to-cart-btn">Add to cart</button>`
             console.log(structure, "here");
             divToAppendProduct.innerHTML = structure;
             divToAppendProductName.innerHTML = productName;
@@ -723,21 +723,23 @@
         function addCart(product) {
             //  alert("Adding to cart")
             var currentUser = JSON.parse(localStorage.getItem("TanishqCurrentUser"))
-            console.log(currentUser.userEmail);
-            var userdata= JSON.parse(localStorage.getItem("Tanishq-Users"));
-            for(var i=0; i<userdata[i].length; i++){
-                if(currentUser.userEmail=== userdata[i].userEmail){
+            // console.log(currentUser.userEmail);
+            var userdata = JSON.parse(localStorage.getItem("Tanishq-Users"));
+            for (var i = 0; i < userdata.length; i++) {
+                if (currentUser.userEmail == userdata[i].userEmail) {
                     alert("got")
-                    if(userdata[i].cartProducts=== undefined){
-                        userdata[i].cartProducts= [product]
-                    }else{
+                    if (userdata[i].cartProducts === undefined) {
+                        // userdata[i].cartProducts = "hello"
+
+                        userdata[i].cartProducts = [product]
+                    } else {
                         userdata[i].cartProducts.push(product);
                     }
                     alert("Product added to cart")
-                    window.location.href="./Cart-1.html"
+                    window.location.href = "./Cart-1.html"
                 }
             }
-            localStorage.setItem("Tanishq-Users",JSON.stringify(userdata))
+            localStorage.setItem("Tanishq-Users", JSON.stringify(userdata))
         }
 
         function logout() {

@@ -10,6 +10,7 @@ function register(event) {
     // console.log(password)
     var confirmpassword = document.getElementById("userconfirmpassword").value
     // console.log(confirmpassword);
+    // var cartProducts = [];
 
     if (name && email && password && confirmpassword) {
         if (password.length >= 8 && confirmpassword.length >= 8) {
@@ -29,6 +30,7 @@ function register(event) {
                         userEmail: email,
                         userPassword: password,
                         userConfirmPassword: confirmpassword
+                        // cartProducts : cartProducts
                     }
                     Ls.push(userdata);
                     localStorage.setItem("Tanishq-Users", JSON.stringify(Ls))
