@@ -285,7 +285,7 @@
                         </div>
                         <div class="add-buy-btns">
                             <div id="for-add-to-cart-btn"> </div>
-                            <!-- <button class="buy-now-btn"> buy now</button> -->
+                            <button class="buy-now-btn"> buy now</button>
                         </div>
                         <hr class="sp-hr-linr">
                         <div class="country-pincode">
@@ -697,14 +697,13 @@
             // }
 
 
+
             var product = JSON.parse(localStorage.getItem("current-product"));
 
             var divToAppendProduct = document.getElementById("singleProduct");
             var divToAppendProductName = document.getElementById("for-product-name");
             var divToAppendProductprice = document.getElementById("for-product-price");
             var divToAppendAddtocart = document.getElementById("for-add-to-cart-btn")
-
-
 
 
             var structure = `<div  id='singlePro' > <img src='${product.proImage} ' /><br/> </div>`
@@ -736,7 +735,7 @@
                         userdata[i].cartProducts.push(product);
                     }
                     alert("Product added to cart")
-                    window.location.href = "./Cart-1.html"
+                    window.location.href = "./Cart-3.html"
                 }
             }
             localStorage.setItem("Tanishq-Users", JSON.stringify(userdata))

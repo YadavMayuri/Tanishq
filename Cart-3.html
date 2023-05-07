@@ -172,7 +172,7 @@
             </div>
 
             <div class="cart-product-details">
-                <div class="left-added-cart-products">
+                <div class="left-added-cart-products" id="finalcart">
                     <div class="cart-product-add-informatio">
                         <div class="cart-product-img-name-price">
                             <div class="cart-product-image" id="product-img">
@@ -188,7 +188,7 @@
                                             503820VCLE1AP12EA000125
                                         </div>
                                         <div class="cart-prices">
-                                            <span id="product-price"></span>
+                                            <span id="product-price">  </span>
                                             <span>₹83203</span>
                                         </div>
 
@@ -216,9 +216,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
 
                 </div>
                 <div class="right-cart-summary">
@@ -463,6 +460,8 @@
             var divToAppendProductImage = document.getElementById("product-img")
             var divToAppendProductName = document.getElementById("product-name")
             var divToAppendProductPrice = document.getElementById("product-price")
+            var divToAppendAllProducts = document.getElementById("finalcart")
+
 
             var products;
             for (var i = 0; i < userdata.length; i++) {
@@ -473,15 +472,62 @@
             var finalImage = ""
             var finalName = ""
             var finalPrice = ""
+            var finalProductCart  = "";
+
             for (var i = 0; i < products.length; i++) {
                 
-                finalImage += `<div  class="final-product-img" > <img src='${products[i].proImage}' /></div > `
-                finalName += `${ products[i].proName } `
-                finalPrice += `₹${ products[i].proPrice } `
+                // finalImage += `<div  class="final-product-img" > <img src='${products[i].proImage}' /></div > `
+                // finalName += `${ products[i].proName } `
+                // finalPrice += `₹${ products[i].proPrice } `
+                finalProductCart +=` <div class="cart-product-add-informatio">
+                        <div class="cart-product-img-name-price">
+                            <div class="cart-product-image" id="product-img">
+                                 <img src=" ${products[i].proImage}" alt=""> 
+                            </div>
+                            <div class="c-product-name-n-all">
+                                <div class="product-name-qty">
+                                    <div class="cart-p-n-price-info">
+                                        <div class="cart-p-name" id="product-name">
+                                            ${products[i].proName}
+                                        </div>
+                                        <div class="product-cart-code">
+                                            503820VCLE1AP12EA000125
+                                        </div>
+                                        <div class="cart-prices">
+                                            <span id="product-price">${products[i].proPrice}   </span>
+                                            <span>₹83203</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="cart-qty-buttons">
+                                        <button class="decrease-btn">-</button>
+                                        <span class="qty-count">1</span>
+                                        <button class="increase-btn ">+</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="gift-wishlist-delete-wrapper">
+                            <div class="gift-wrapper">
+                                <input type="checkbox">
+                                <span class="gift-message">add gift message</span>
+                            </div>
+
+                            <div class="wishlist-cart-icon">
+                                <img src="./images/wishlist.svg" alt="">
+                            </div>
+                            <div class="delete-icon">
+                                <img src="./images/delete.svg" alt="">
+                            </div>
+                        </div>
+                    </div>`
             }
             divToAppendProductImage.innerHTML = finalImage;
             divToAppendProductName.innerHTML = finalName;
             divToAppendProductPrice.innerHTML = finalPrice;
+            divToAppendAllProducts.innerHTML = finalProductCart;
+
         }
         function logout() {
             alert("Logout successful.")
