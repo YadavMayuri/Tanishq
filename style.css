@@ -2590,6 +2590,16 @@ a {
     width: 30%;
     height: 3rem;
 }
+.decrease-btn:hover{
+    background-color:  #5a1617;
+    color: white;
+    cursor: pointer;
+}
+.increase-btn:hover{
+    background-color:  #5a1617;
+    color: white;
+    cursor: pointer;
+}
 
 .increase-btn {
     background-color: lightgrey;
