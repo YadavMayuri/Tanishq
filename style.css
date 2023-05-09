@@ -1890,7 +1890,9 @@ a {
     width: 30%;
     /* border: .1rem solid navy; */
 }
-
+.sp-star-rating >i{
+    color: #832729;
+}
 .sp-heading-review {
     width: 67%;
     /* border: .1rem solid navy; */
@@ -2348,7 +2350,8 @@ a {
 }
 
 .star-icon-rate {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    color: #832729;
 
 }
 
@@ -2414,6 +2417,8 @@ a {
     justify-content: center;
     gap: 1rem;
     align-items: center;
+    font-size: 1.8rem;
+    color: #832729;
 }
 
 .first-one-write-review {
@@ -2425,7 +2430,7 @@ a {
     outline: none;
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     display: block;
     margin: auto;
 }
