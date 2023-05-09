@@ -708,7 +708,7 @@
 
             var structure = `<div  id='singlePro' > <img src='${product.proImage} ' /><br/> </div>`
             var productName = `${product.proName}`
-            var productprice = `${product.proPrice}`
+            var productprice = `₹${product.proPrice}`
             var addtocart = ` <button onclick='addCart(${JSON.stringify(product)})' class="add-to-cart-btn">Add to cart</button>`
             console.log(structure, "here");
             divToAppendProduct.innerHTML = structure;

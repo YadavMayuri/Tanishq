@@ -227,16 +227,28 @@
             <button class="function-btn">sort by: best sellers<i class="fa-solid fa-angle-down"></i></button>
         </div>
 
-        <div class="products-wrapper">
-            <div class="all-t-products-wrap">
-                <!-- <h1>All Products</h1> -->
+        <div class="products-wrapper" id="finalTanishqproducts">
+            <!-- <div class="all-t-products-wrap">
                 <div id="products"></div>
-            </div>
-        </div>
-        <!-- <div class="more-products">
-            <button class="explorer-btn">see more products</button>
-        </div> -->
+            </div> -->
 
+            <div>
+                <div class="products">
+                    <div class="product-image" id="product-img">
+                        <!-- <img src="images/pr1.webp" alt=""> -->
+                    </div>
+                    <div class="product-info">
+                        <div class="hurry">only 1 left in stock</div>
+                        <div class="p-name" id="for-product-name"> </div>
+                        <div class="p-price" id="for-product-price"> </div>
+                        <div class="p-path">Women | Finger Ring </div>
+                        <button class="explorer-btn">explore now</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+      
     </div>
 
 
@@ -382,17 +394,45 @@
 
 
 
-            var divToShowProducts = document.getElementById("products");
-            var finalData = "";
+            // var divToShowProducts = document.getElementById("products");
+            // var finalData = "";
+
+            var divToAppendProductImage = document.getElementById("product-img")
+            var divToAppendProductName = document.getElementById("for-product-name");
+            var divToAppendProductPrice = document.getElementById("for-product-price");
+            var divToAppendAllProducts = document.getElementById("finalTanishqproducts")
+
+            var finalImage = ""
+            var finalName = ""
+            var finalPrice = ""
+            var finaltanishqMultiplePro = ""
 
             var productsFromLS = JSON.parse(localStorage.getItem("Products"))
             for (var i = 0; i < productsFromLS.length; i++) {
-                finalData += `<div onclick='redirect(${JSON.stringify(productsFromLS[i])})' id='singlePro'><img src=${productsFromLS[i].proImage} /><h3 class="mpp-pro-name">${productsFromLS[i].proName}</h3><p class="mpp-pro-price">₹ ${productsFromLS[i].proPrice}</p></div>`;
+                // finalData += `<div onclick='redirect(${JSON.stringify(productsFromLS[i])})' id='singlePro'><img src=${productsFromLS[i].proImage} /><h3 class="mpp-pro-name">${productsFromLS[i].proName}</h3><p class="mpp-pro-price">₹ ${productsFromLS[i].proPrice}</p></div>`;
+                finaltanishqMultiplePro += `  <div  onclick='redirect(${JSON.stringify(productsFromLS[i])})'>
+                <div class="products">
+                    <div class="product-image" id="product-img">
+                         <img src="${productsFromLS[i].proImage}" alt=""> 
+                    </div>
+                    <div class="product-info">
+                        <div class="hurry">only 1 left in stock</div>
+                        <div class="p-name" id="for-product-name"> ${productsFromLS[i].proName} </div>
+                        <div class="p-price" id="for-product-price">₹${productsFromLS[i].proPrice}  </div>
+                        <div class="p-path">Women | Finger Ring </div>
+                        <button class="explorer-btn">explore now</button>
+                    </div>
+                </div>
+            </div>`
             }
 
             // console.log(finalData, "finalData here")
 
-            divToShowProducts.innerHTML = finalData;
+            divToAppendProductImage.innerHTML = finalImage;
+            divToAppendProductName.innerHTML = finalName;
+            divToAppendProductPrice.innerHTML = finalPrice;
+            divToAppendAllProducts.innerHTML = finaltanishqMultiplePro;
+            // divToShowProducts.innerHTML = finalData;
         }
 
         function redirect(product) {
